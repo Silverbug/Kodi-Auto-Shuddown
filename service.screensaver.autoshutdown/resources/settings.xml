@@ -1,0 +1,26 @@
+<settings>
+  <category label="General">
+    <setting id="enabled"
+             type="bool"
+             label="Enable shutdown timer"
+             default="true" />
+
+    <setting id="delay_minutes"
+             type="number"
+             label="Minutes after screensaver starts to shutdown"
+             default="5"
+             minimum="1" />
+
+    <setting id="action"
+             type="select"
+             label="Power action"
+             default="0"
+             values="Shutdown|Suspend|Hibernate|Quit" />
+
+    <setting id="cancel_on_deactivate"
+             type="bool"
+             label="Cancel countdown if screensaver deactivates"
+             default="true" />
+
+  </category>
+</settings>

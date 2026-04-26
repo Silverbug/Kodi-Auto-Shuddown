@@ -1,0 +1,16 @@
+<addon id="service.screensaver.autoshutdown"
+       name="Screensaver Auto Shutdown"
+       version="0.1.12"
+       provider-name="Silverbug">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+
+  <extension point="xbmc.service" library="service.py" start="startup" />
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Shutdown after screensaver has been active for a configurable time</summary>
+    <description>Monitors screensaver activation and shuts down after a configurable delay.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
